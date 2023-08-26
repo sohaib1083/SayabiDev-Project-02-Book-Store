@@ -8,3 +8,11 @@
     width:350px;
     height: 530px;
 }
+
+.viewBooks{
+text-decoration: none;
+}
+
+.viewBooks:hover {
+    color:white;
+}

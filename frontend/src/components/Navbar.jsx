@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
@@ -21,21 +21,15 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#" style={{ color: 'white' }}>
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#" style={{ color: 'white' }}>
-                  Books
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#" style={{ color: 'white' }}>
-                  Add Book
-                </a>
-              </li>
+              <Link className="nav-item nav-link active" to="/" >
+               Home
+              </Link>
+              <Link className="nav-item nav-link active" to="/books" >
+               Books
+              </Link>
+              <Link className="nav-item nav-link active" to="/addBooks" >
+               Add Books
+              </Link>
             </ul>
           </div>
         </div>

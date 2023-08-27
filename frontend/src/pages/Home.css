@@ -9,10 +9,10 @@
     height: 530px;
 }
 
-.viewBooks{
+.viewBook{
 text-decoration: none;
 }
 
-.viewBooks:hover {
+.viewBook:hover {
     color:white;
 }

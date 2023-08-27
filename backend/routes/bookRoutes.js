@@ -5,8 +5,7 @@ const bookModel = require("../models/bookModel");
 // post request
 router.post("/add", async (req, res)=>{
     try {
-        const data = req.body; //console se data uthana
-        const newbook = new bookModel(data);  //  create new book
+        const newbook = new bookModel(req.body);
         await newbook.save().then(()=>{
             res.status(200).json({"message":"Book Added Successfully"})
         });
